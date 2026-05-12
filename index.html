@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Demo Toàn Màn Hình</title>
+    <style>
+        /* Reset margin và padding để không bị viền trắng */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Nền đen giúp tập trung vào video */
+            overflow: hidden; /* Ẩn thanh cuộn (scroll) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cho video bung full màn hình */
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain; /* Giữ nguyên tỉ lệ video, không bị cắt xén */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thay 'demo.mp4' bằng tên file video của bạn -->
+    <!-- Thêm 'autoplay' và 'muted' để tự động chạy khi vào web -->
+    <video controls autoplay muted>
+        <source src="demoweb.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+</body>
+</html>
